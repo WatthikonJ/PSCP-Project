@@ -1,46 +1,41 @@
 # DormSecure — Dormitory Web Application
 
-A group project developed with **Python, Flask and SQLite**. DormSecure provides account management and a request workflow for dormitory residents and owners.
+DormSecure is a dormitory management web application developed as a team project.
 
-## Core features
-- Account signup and login
+## Features
+- User registration and login
 - Guest and owner roles
-- Residents can submit requests related to their building, floor and room
-- Owners can review and manage requests
-- Request status pages
+- Dormitory request submission
+- Owner-side request management
+- Request status tracking
 
-## Tech stack
-- **Backend:** Python 3, Flask
+## Tech Stack
+- **Backend:** Python, Flask
 - **Database:** SQLite
-- **Frontend:** HTML templates, CSS
-- **Deployment:** Gunicorn / Procfile
+- **Frontend:** HTML, CSS
+- **Deployment:** Gunicorn
 
-## Run locally
+## Project Structure
+- `app.py` — Flask application and database logic
+- `templates/` — HTML pages
+- `static/` — CSS and other assets
+- `requirements.txt` — dependencies
+- `Procfile` — deployment configuration
+
+## Run Locally
+
 ```bash
 python -m venv .venv
-# Activate the virtual environment for your OS
 pip install -r requirements.txt
 python app.py
 ```
 
-Open the local URL printed by Flask.
+## Project Links
+- [Web Application](https://dormsecure-297e888332bb.herokuapp.com/)
+- [Project Report](https://docs.google.com/document/d/1n7AHMCy5Db5Mo6lWQ7gJHon4AbRxuJVvFmKdeQIjUZI/edit?tab=t.0/)
 
-## Project structure
-- `app.py` — Flask routes, database creation and request logic
-- `templates/` — HTML pages
-- `static/` — frontend assets
-- `requirements.txt` — Python dependencies
-- `Procfile` — deployment entry point
-
-## Project links
-- [Deployment](https://dormsecure-297e888332bb.herokuapp.com/) (availability not verified)
-- [Project report](https://docs.google.com/document/d/1n7AHMCy5Db5Mo6lWQ7gJHon4AbRxuJVvFmKdeQIjUZI/edit?tab=t.0/)
-
-## Team
-DormSecure was developed as a student team project at KMITL. Original team credits:
+## Team Members
 - Thitipat Nontaphet
 - Watthikon Julpan
 - Apisit Nunkaew
 - Pratchaya Phianphon
-
-> **Security note:** This is a coursework demo. Before any production use, replace placeholder secret keys, remove hard-coded demo credentials and review authentication, data validation and deployment configuration.
